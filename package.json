@@ -1,0 +1,23 @@
+{
+  "name": "watch",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "babel-loader": "^5.3.1",
+    "json-loader": "^0.5.2",
+    "lodash": "^3.10.0",
+    "node-libs-browser": "^0.5.2",
+    "react": "^0.13.3",
+    "react-motion": "0.0.3",
+    "simple-modular-scale": "^1.0.2",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors",
+    "prod": "webpack -p --progress --colors",
+    "start": "npm run dev"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT"
+}
