@@ -44,22 +44,19 @@ class App extends React.Component {
     })
     let styles = {
       container: {
-        fontFamily: 'sans-serif',
-        display: 'table',
-        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         boxSizing: 'border-box',
         padding: ms[6],
+        width: '100%',
         minHeight: '100vh',
+        fontFamily: 'sans-serif',
         color: 'white',
-        backgroundColor: '#111',
-      },
-      center: {
-        display: 'table-cell',
-        verticalAlign: 'middle',
+        backgroundColor: '#111'
       },
       watch: {
-        maxWidth: ms[16],
-        maxHeight: '100%',
+        maxHeight: '50vh',
         margin: 'auto'
       }
     }
@@ -72,10 +69,8 @@ class App extends React.Component {
 
     return (
       <div style={styles.container}>
-        <div style={styles.center}>
-          <div style={styles.watch}>
-            <Analog {...this.state} {...time} />
-          </div>
+        <div style={styles.watch}>
+          <Analog {...this.state} {...time} />
         </div>
       </div>
     )
@@ -83,4 +78,3 @@ class App extends React.Component {
 }
 
 export default App
-
